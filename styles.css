@@ -89,8 +89,8 @@ section {
   font-size: 15px;
   text-align: center;
   line-height: auto;
-  width: 152px;
-  height: 130px;
+  width: 174px;
+  height: 142px;
   margin: 10px;
   padding: 0px;
   border: 2px solid LightBlue;
@@ -100,7 +100,7 @@ section {
   border: 2px solid #2c9acb;
 }
 .thumbnail {
-  width: 148px;
+  width: 170px;
 }
 
 /*Styling for external links in footer---------------------------------*/
