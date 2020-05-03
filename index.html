@@ -99,34 +99,22 @@
     <a href="https://www.youtube.com/channel/UC77SO-bVkzyRYwldn13wtnQ"
       target="_blank" class="bottom_nav_elements">
       <img class="icon" id="yt_logo" src="yt_white.png" alt="Youtube Channel"
-        onmouseover="changeIconYT()" onmouseleave="changeIconYT()"></a>
+        onmouseover="changeIconYT('colour')" onmouseleave="changeIconYT()"></a>
     <a href="https://www.instagram.com/_shauncb_/" target="_blank"
       class="bottom_nav_elements">
       <img class="icon" id="ig_logo" src="instagram_white.png" alt="instagram Page"
-        onmouseover="changeIconIG()" onmouseleave="changeIconIG()"></a>
+        onmouseover="changeIconIG('colour')" onmouseleave="changeIconIG()"></a>
   </nav>
 
   <script>
-    var picYT = "yt_white.png";
-    function changeIconYT() {
-      if (picYT == "yt_white.png") {
-        picYT = "yt_colour.png";
-      } else {
-        picYT = "yt_white.png";
-      }
-      document.getElementById('yt_logo').src = picYT;
+    function changeIconYT(picYT = "white") { //defaults to white
+      document.getElementById('yt_logo').src = picYT == "white" ? "yt_white.png" : "yt_colour.png"; //set to white if white, else set to colour
     }
   </script>
 
   <script>
-    var picIG = "instagram_white.png";
-    function changeIconIG() {
-      if (picIG == "instagram_white.png") {
-        picIG = "instagram_colour.png";
-      } else {
-        picIG = "instagram_white.png";
-      }
-      document.getElementById('ig_logo').src = picIG;
+    function changeIconIG(picIG = "white") { //defaults to white
+      document.getElementById('ig_logo').src = picIG == "white" ? "instagram_white.png" : "instagram_colour.png"; //set to white if white, else set to colour
     }
   </script>
 </footer>
