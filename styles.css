@@ -131,11 +131,6 @@ nav {
     height: 800px;
   }
 }
-@media (max-width: 1200px) {
-  aside, section {
-    height: 800px;
-  }
-}
 @media (max-width: 815px) {
   aside, section {
     height: 1000px;
