@@ -39,7 +39,7 @@ aside {
   color: white;
   font-size: 15px;
   float: left;
-  width: 30%;
+  width: 20%;
   height: 700px;
   font-size: 15px;
 }
@@ -70,7 +70,7 @@ section {
   padding: 15px;
   overflow: auto;
   float: left;
-  width: 70%;
+  width: 80%;
   font-size: 16px;
 }
 #home_div {
@@ -136,12 +136,12 @@ nav {
     height: 1000px;
   }
 }
+.longpage {
+  height: 1300px;
+}
 @media (max-width: 600px) {
-  aside, section {
+  aside, section, .longpage {
     width: 100%;
     height: auto;
   }
-}
-.longpage {
-  height: 1300px;
 }
