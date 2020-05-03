@@ -128,7 +128,7 @@ nav {
 /*Media query to change element layout--------------------------------*/
 @media (max-width: 2000px) {
   aside, section {
-    height: 550px;
+    height: 800px;
   }
 }
 @media (max-width: 1500px) {
