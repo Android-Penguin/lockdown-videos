@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>SC-B Lockdown Videos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Showcase of videos made for the PB Tech Video Challenge">
+  <meta name="keywords" content="PB Tech, Lockdownlols, Lockdown Video Challenge">
+  <meta name="author" content="Shaun C-B">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="scblogo.ico">
+</head>
+
+<!--Body of website-->
+<body onresize="changeText()" onload="changeText()">
+<!--Header///////////////////////////////////////////////-->
+<header>
+  <h1><span id="title1">SC-B</span>
+    <span id="title2"> Lockdown Videos</span></h1>
+    <p id="subtitle">Showcase of videos made for the PB Tech Video Challenge</p>
+</header>
+<!--Left navivation bar//////////////////////////////////-->
+<aside>
+  <ul>
+      <li class="current_page"><a href="index.html">Home</a></li>
+      <hr>
+      <li><a href="challenge1.html">Steady Hands Challenge</a></li>
+      <li><a href="challenge2.html">Inventor Challenge</a></li>
+      <li><a href="challenge3.html">Camouflage Challenge</a></li>
+      <li><a href="challenge4.html">Simulation Challenge</a></li>
+      <li><a href="challenge5.html">Floor is Lava Challenge</a></li>
+      <li><a href="challenge6.html">Stop Motion Challenge</a></li>
+      <hr>
+      <li><a href="bts.html">Behind the Scenes</a></li>
+      <li><a href="prizes.html">Prizes we won</a></li>
+  </ul>
+</aside>
+<!--Main section of text/////////////////////////////////-->
+<section>
+  <h1>Introduction</h1>
+  <p><img src="lockdownlols.png" alt="Video challenge logo"
+    style="float:right; width:40%; height:40%; border:0; padding:10px;
+    margin-top:10px; margin-bottom:20px">
+    Over the 4 weeks of level 4 lockdown, PB tech hosted a
+    series of video competitions. Each day had a Taskmaster
+    style challenge where people had to create a 1 minute
+    video to achieve the day's brief in the most creative
+    way possible. The challenges ranged from building
+    elabourate contraptions to doing the most of something
+    in a 7 second time limit, with the best video from each day
+    winning a tech product valued between $100-$1000.</p>
+
+  <p>I entered 6 of these challenges and was able to win 2 of them.
+    Each video had at least a day's work put into the planning,
+    filming and editing; and I have created this website to show
+    all the finished products, as well as some behind the scenes footage.
+    Check out the video pages below, or through the navigation
+    menu <span id="menu_position"></span>.</p>
+    <p id="demo"></p>
+
+  <script>
+    function changeText() {
+      var w = window.outerWidth;
+      if(w < 600) {
+        document.getElementById("menu_position").innerHTML = "above";
+      } else {
+        document.getElementById("menu_position").innerHTML = "on the left";
+      }
+      <!--document.getElementById("demo").innerHTML = w;-->
+    }
+  </script>
+  <hr id="home_div">
+
+  <div class="flex-container">
+    <div><a href="challenge1.html"><img class="thumbnail"
+      src="challenge1_icon.png" alt="video thumbnail"></a>
+      Steady Hands Challenge</div>
+    <div><a href="challenge2.html"><img class="thumbnail"
+      src="challenge2_icon.png" alt="video thumbnail"></a>
+      Inventor Challenge</div>
+    <div><a href="challenge3.html"><img class="thumbnail"
+      src="challenge3_icon.png" alt="video thumbnail"></a>
+      Camouflage Challenge</div>
+    <div><a href="challenge4.html"><img class="thumbnail"
+      src="challenge4_icon.png" alt="video thumbnail"></a>
+      Simulation Challenge</div>
+    <div><a href="challenge5.html"><img class="thumbnail"
+      src="challenge5_icon.png" alt="video thumbnail"></a>
+      Floor is Lava Challenge</div>
+    <div><a href="challenge6.html"><img class="thumbnail"
+      src="challenge6_icon.png" alt="video thumbnail"></a>
+      Stop Motion Challenge</div>
+  </div>
+</section>
+<!--Footer for contact details////////////////////////////-->
+<footer>
+  <nav>
+    <span class="bottom_nav_elements">Find me on:</span>
+    <a href="https://www.youtube.com/channel/UC77SO-bVkzyRYwldn13wtnQ"
+      target="_blank" class="bottom_nav_elements">
+      <img class="icon" id="yt_logo" src="yt_white.png" alt="Youtube Channel"
+        onmouseover="changeIconYT()" onmouseleave="changeIconYT()"></a>
+    <a href="https://www.instagram.com/_shauncb_/" target="_blank"
+      class="bottom_nav_elements">
+      <img class="icon" id="ig_logo" src="instagram_white.png" alt="instagram Page"
+        onmouseover="changeIconIG()" onmouseleave="changeIconIG()"></a>
+  </nav>
+
+  <script>
+    var picYT = "yt_white.png";
+    function changeIconYT() {
+      if (picYT == "yt_white.png") {
+        picYT = "yt_colour.png";
+      } else {
+        picYT = "yt_white.png";
+      }
+      document.getElementById('yt_logo').src = picYT;
+    }
+  </script>
+
+  <script>
+    var picIG = "instagram_white.png";
+    function changeIconIG() {
+      if (picIG == "instagram_white.png") {
+        picIG = "instagram_colour.png";
+      } else {
+        picIG = "instagram_white.png";
+      }
+      document.getElementById('ig_logo').src = picIG;
+    }
+  </script>
+</footer>
+
+</body>

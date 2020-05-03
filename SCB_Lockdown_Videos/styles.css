@@ -1,0 +1,154 @@
+/*Page-wide styling----------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Verdana";
+  background-color: #464646;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Styling for title block--------------------------------------*/
+header {
+  background-color: #0d4f77;
+  padding: 10px;
+  font-size: 25px;
+}
+h1 {
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#title1 {
+  color: #ee8021;
+  margin-left: 5px;
+}
+#title2 {
+  color: white;
+}
+#subtitle {
+  color: white;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/*Styling for main navigation menu--------------------------------*/
+aside {
+  background-color: #0b3650;
+  color: white;
+  font-size: 15px;
+  float: left;
+  width: 30%;
+  height: 700px;
+  font-size: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+li a {
+  display: block;
+  padding: 15px;
+  color:white;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #2c9acb;
+  margin-left: 0px;
+}
+.current_page {
+  background-color: #2c9acb;
+}
+
+/*Styling for body of content----------------------------------------*/
+section {
+  background-color: LightBlue;
+  color: black;
+  padding: 15px;
+  overflow: auto;
+  float: left;
+  width: 70%;
+  font-size: 16px;
+}
+#home_div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*Flex container-------------------------------------------------------*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.flex-container > div {
+  color: LightBlue;
+  font-size: 15px;
+  text-align: center;
+  line-height: auto;
+  width: 152px;
+  height: 130px;
+  margin: 10px;
+  padding: 0px;
+  border: 2px solid LightBlue;
+}
+.flex-container > div:hover {
+  color: black;
+  border: 2px solid #2c9acb;
+}
+.thumbnail {
+  width: 148px;
+}
+
+/*Styling for external links in footer---------------------------------*/
+footer {
+  background-color: #464646;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  font-size: 20px;
+}
+nav {
+  background-color: #464646;
+}
+.bottom_nav_elements {
+  background-color: #464646;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.icon {
+  height: 21px;
+}
+
+/*Media query to change element layout--------------------------------*/
+@media (max-width: 2000px) {
+  aside, section {
+    height: 550px;
+  }
+}
+@media (max-width: 1500px) {
+  aside, section {
+    height: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  aside, section {
+    height: 800px;
+  }
+}
+@media (max-width: 815px) {
+  aside, section {
+    height: 1000px;
+  }
+}
+@media (max-width: 600px) {
+  aside, section {
+    width: 100%;
+    height: auto;
+  }
+}
